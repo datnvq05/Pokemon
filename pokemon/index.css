@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #0a1421, #020814);
+  color: #fff;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-column-gap: 10px;
+}
+
+/* xs */
+@media only screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-column-gap: 10px;
+  }
+}
+
+/* sm */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 10px;
+  }
+}
+
+/* md */
+@media only screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-column-gap: 10px;
+  }
+}
+
+/* lg */
+@media only screen and (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 10px;
+  }
+}
